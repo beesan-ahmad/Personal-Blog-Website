@@ -1,0 +1,76 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    height: 100vh;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "k2";
+    background-image: url("https://4.bp.blogspot.com/-1FjIS94wDo0/WbVfx4rZLzI/AAAAAAABAQo/Y7qHnXvYODgp6cu8UM30NzXffPjKZvVzACLcBGAs/s1600/Hd-Laptop-wallpapers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.text {
+    grid-area: k2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.text p {
+    color: #d5925e;
+}
+
+.text h1 {
+    font-size: 6vw;
+
+}
+
+.text p {
+    font-family: "Lucida Handwriting", cursive;
+    font-weight: bold;
+    font-size: 4vw;
+    margin: 20px 0;
+}
+
+#myAnchor {
+    color: white;
+    text-decoration: none;
+    font-size: 3vw;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 4px solid whitesmoke;
+    padding: 10px;
+    color: #d5925e;
+}
+
+@media (max-width: 768px) {
+    .text {
+        padding: 10px;
+    }
+
+    .text h1 {
+        font-size: 8vw;
+    }
+
+    .text p {
+        font-size: 5vw;
+    }
+
+    #myAnchor {
+        font-size: 4vw;
+        padding: 8px;
+    }
+}
