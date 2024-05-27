@@ -13,61 +13,48 @@
 
 @media screen and (max-width: 900px) {
     .persona-image {
-
-        >div:first-of-type {
+        > div:first-of-type {
             width: 20rem;
             height: 23rem;
         }
 
-        >.background {
+        > .background {
             width: 20rem;
             height: 21rem;
         }
-
-    }
-
-    @media screen and (max-width: 816px) {
-
-        .profile-introduction {
-            font-size: 2rem !important;
-
-        }
-
-        .persona-image {
-
-            >div:first-of-type {
-                width: 18rem;
-                height: 21rem;
-            }
-
-            >.background {
-                width: 18rem;
-                height: 19rem;
-            }
-        }
-
     }
 }
 
+@media screen and (max-width: 816px) {
+    .profile-introduction {
+        font-size: 2rem !important;
+    }
+
+    .persona-image {
+        > div:first-of-type {
+            width: 18rem;
+            height: 21rem;
+        }
+
+        > .background {
+            width: 18rem;
+            height: 19rem;
+        }
+    }
+}
 
 @media screen and (max-width: 690px) {
-header {
-    ul {
+    header ul {
         width: 60%;
     }
 }
-}
 
 @media screen and (max-width: 480px) {
-header {
-    ul {
+    header ul {
         width: 100%;
     }
-}
 
-.post {
-
-    .site-content {
+    .post .site-content {
         width: 100%;
     }
 
@@ -76,11 +63,9 @@ header {
     }
 
     .profile-introduction {
-        font-size: .6rem;
+        font-size: 0.6rem;
     }
 }
-}
-
 
 @media (max-width: 768px) {
     .text {
