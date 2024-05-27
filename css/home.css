@@ -101,15 +101,3 @@ body {
     margin-top: 130px;
 }
 
-/* Apply responsive design */
-@media (min-width: 640px) {
-    .posts {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 1024px) {
-    .posts {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}

@@ -1,0 +1,102 @@
+/* Apply responsive design */
+@media (min-width: 640px) {
+    .posts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .posts {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .persona-image {
+
+        >div:first-of-type {
+            width: 20rem;
+            height: 23rem;
+        }
+
+        >.background {
+            width: 20rem;
+            height: 21rem;
+        }
+
+    }
+
+    @media screen and (max-width: 816px) {
+
+        .profile-introduction {
+            font-size: 2rem !important;
+
+        }
+
+        .persona-image {
+
+            >div:first-of-type {
+                width: 18rem;
+                height: 21rem;
+            }
+
+            >.background {
+                width: 18rem;
+                height: 19rem;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 690px) {
+header {
+    ul {
+        width: 60%;
+    }
+}
+}
+
+@media screen and (max-width: 480px) {
+header {
+    ul {
+        width: 100%;
+    }
+}
+
+.post {
+
+    .site-content {
+        width: 100%;
+    }
+
+    .persona-image {
+        display: none;
+    }
+
+    .profile-introduction {
+        font-size: .6rem;
+    }
+}
+}
+
+
+@media (max-width: 768px) {
+    .text {
+        padding: 10px;
+    }
+
+    .text h1 {
+        font-size: 8vw;
+    }
+
+    .text p {
+        font-size: 5vw;
+    }
+
+    #myAnchor {
+        font-size: 4vw;
+        padding: 8px;
+    }
+}

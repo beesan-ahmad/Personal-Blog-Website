@@ -56,22 +56,3 @@ nav {
     color: #d5925e;
 }
 
-/* Apply responsive design */
-@media (max-width: 768px) {
-    .text {
-        padding: 10px;
-    }
-
-    .text h1 {
-        font-size: 8vw;
-    }
-
-    .text p {
-        font-size: 5vw;
-    }
-
-    #myAnchor {
-        font-size: 4vw;
-        padding: 8px;
-    }
-}
