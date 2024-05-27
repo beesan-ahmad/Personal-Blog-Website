@@ -43,18 +43,6 @@ body {
     margin-top: 1rem;
 }
 
-@media (min-width: 640px) {
-    .posts {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (min-width: 1024px) {
-    .posts {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
 .post {
     background-color: white;
     border-radius: 0.5rem;
@@ -111,4 +99,17 @@ body {
     padding: 1rem;
     text-align: center;
     margin-top: 130px;
+}
+
+/* Apply responsive design */
+@media (min-width: 640px) {
+    .posts {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .posts {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }

@@ -96,7 +96,6 @@ header {
                 margin-bottom: 1rem;
                 text-decoration: none;
                 text-align: center;
-
                 box-shadow: #c4e4eb 0px .3rem .2rem;
                 background-color: #028aa9;
                 color: white;
@@ -144,7 +143,6 @@ header {
                 width: 100%;
                 object-fit: cover;
             }
-
         }
 
         >.background {
@@ -159,6 +157,7 @@ header {
         }
     }
 
+    /* Apply responsive design */
     @media screen and (max-width: 900px) {
         .persona-image {
 
@@ -192,11 +191,9 @@ header {
                     width: 18rem;
                     height: 19rem;
                 }
-
             }
 
         }
-
     }
 }
 
