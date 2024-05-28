@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -15,99 +13,104 @@ header {
     padding: 1rem;
 }
 
-header>ul {
+header > ul {
     margin-left: auto;
-    flex-wrap: nowrap;
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: space-between;
-    width: 40%;
 }
 
-header>ul>li {
+header > ul > li {
     list-style: none;
     font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s ease;
 }
 
-header>ul>li.active,
-header>ul>li:hover {
-    cursor: pointer;
+header > ul > li.active,
+header > ul > li:hover {
     color: #d5925e;
 }
 
 .post {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 2% 5%;
-    margin: auto 0;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%);
-    position: absolute;
+    position: relative;
 }
 
 .site-content {
-    width: 50%;
+    width: 100%;
+    max-width: 800px;
 }
 
 .profile-container p {
-    width: 90%;
-    margin-bottom: 3.4rem;
+    width: 100%;
+    margin-bottom: 2rem;
 }
 
-.profile-container>p:first-of-type {
+.profile-container > p:first-of-type {
     color: #45a6be;
     font-size: 1.3rem;
 }
 
 .profile-introduction {
     font-weight: 900;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #008db0;
+    text-align: center;
 }
 
-.profile-introduction>span {
+.profile-introduction > span {
     color: #d5925e;
 }
 
 #profile {
-    white-space: wrap;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
+    text-align: justify;
 }
 
-#profile>.see-more {
+#profile > .see-more {
     color: #45a6be;
     cursor: pointer;
 }
 
-.cta-buttons>.button,
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.cta-buttons > .button,
 #see-button {
     display: inline-block;
     border: none;
     outline: none;
     cursor: pointer;
     padding: .5rem 1.3rem;
-    font-size: 1.1rem;
+    font-size: 1rem;
     border-radius: .31rem;
-    margin-bottom: 1rem;
+    margin-right: 1rem;
     text-decoration: none;
     text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.cta-buttons>.button {
-    box-shadow: #c4e4eb 0px .3rem .2rem;
+.cta-buttons > .button {
     background-color: #028aa9;
     color: white;
-    margin-right: 2rem;
 }
 
 #see-button {
-    box-shadow: #c4e4eb 0px .1rem .2rem;
     background-color: white;
     border: 1px solid #028aa9;
     color: #028aa9;
+}
+
+.cta-buttons > .button:hover,
+#see-button:hover {
+    background-color: #025c6d;
 }
 
 .cta-buttons img {
@@ -116,64 +119,68 @@ header>ul>li:hover {
 }
 
 .persona-image {
+    width: 100%;
+    max-width: 400px;
     position: relative;
-    width: 40%;
+    overflow: hidden;
 }
 
-.persona-image>div:first-of-type {
-    width: 23rem;
-    height: 23rem;
-    overflow-y: hidden;
-    border-bottom-left-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
+.persona-image > div:first-of-type {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
 }
 
 .persona-image img {
     width: 100%;
+    height: 100%;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .persona-image .background {
-    width: 23rem;
-    height: 21rem;
+    width: 100%;
+    height: 100%;
     background-color: #81d4e8;
-    border-bottom-left-radius: 50%;
     position: absolute;
-    z-index: 1;
-    right: 1rem;
-    top: 2rem;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    opacity: 0.8;
 }
 
-@media (max-width: 912px) and (min-width: 586px),
-(max-width: 585px) {
-    .post {
-        flex-direction: column;
-        align-items: center;
-        transform: none;
-        position: relative;
+/* Media Queries for Responsiveness */
+
+@media (max-width: 1024px) {
+    .profile-introduction {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .profile-introduction {
+        font-size: 1.5rem;
     }
 
-    .site-content,
     .persona-image {
-        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-introduction {
+        font-size: 1.3rem;
     }
 
-    .persona-image>div:first-of-type {
-        position: relative;
-        width: 100%;
-        height: auto;
-        border-bottom-left-radius: 0;
+    .persona-image {
+        max-width: 200px;
     }
+}
 
-    .persona-image .background {
-        display: none;
-    }
-
-    .profile-container p {
-        width: 100%;
-        margin-bottom: 2rem;
+@media (max-width: 320px) {
+    .profile-introduction {
+        font-size: 1.2rem;
     }
 }
